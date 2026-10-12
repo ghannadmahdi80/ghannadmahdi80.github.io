@@ -58,7 +58,7 @@ function setupLightbox() {
     if (caption) caption.textContent = text || '';
     modal.classList.remove('hidden');
     modal.classList.add('flex');
-    document.body.style.overflow = 'hidden'; // قفل اسکرول در حالت نمایش بزرگ
+    document.body.style.overflow = 'hidden';
   };
 
   const close = () => {
@@ -242,7 +242,6 @@ function setupImageFallbacks() {
 
     img.addEventListener('error', handleFallback);
     
-    // اگر عکس قبلاً شکسته شده باشد
     if (img.complete && img.naturalWidth === 0) {
       handleFallback();
     }
@@ -251,3 +250,35 @@ function setupImageFallbacks() {
 
 /* ساخت پلیس‌هولدر SVG هماهنگ با تم تیره و خطوط نئونی */
 function generateSvgPlaceholder(title, dimensions) {
+  let width = 800;
+  let height = 480;
+  if (dimensions && dimensions.includes('x')) {
+    const parts = dimensions.split('x');
+    width = parseInt(parts[0], 10) || 800;
+    height = parseInt(parts[1], 10) || 480;
+  }
+  const cy = Math.round(height * 0.42);
+  const ty = Math.round(height * 0.58);
+  const dy = Math.round(height * 0.68);
+
+  const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
+      <defs>
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#18181B" />
+          <stop offset="100%" stop-color="#0E0E10" />
+        </linearGradient>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect width="${width}" height="${height}" fill="url(#bgGrad)"/>
+      <rect width="${width}" height="${height}" fill="url(#grid)"/>
+      <circle cx="${width / 2}" cy="${cy}" r="36" fill="#1F2937" stroke="#34D399" stroke-width="2"/>
+      <path d="M${width / 2 - 14} ${cy + 12} L${width / 2 - 4} ${cy - 8} L${width / 2 + 8} ${cy + 4} L${width / 2 + 14} ${cy - 4} L${width / 2 + 20} ${cy + 12} Z" fill="#34D399" opacity="0.85"/>
+      <text x="${width / 2}" y="${ty}" fill="#E4E4E7" font-size="18" font-family="'Vazirmatn', sans-serif" font-weight="bold" text-anchor="middle" direction="rtl">${title}</text>
+      <text x="${width / 2}" y="${dy}" fill="#71717A" font-size="13" font-family="monospace" text-anchor="middle">${dimensions}</text>
+    </svg>
+  `;
+  return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+}
