@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" class="scroll-smooth">
+<html lang="fa" dir="rtl" class="scroll-smooth overflow-x-hidden">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>مهدی قناد | پورتفولیو دیزاین گرافیک و UI/UX</title>
   
   <!-- فونت فارسی وزیرمتن -->
@@ -16,421 +16,39 @@
   <!-- استایل‌های اختصاصی خارجی -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#121212] text-white selection:bg-[#34D399]/30 selection:text-white relative font-['Vazirmatn',sans-serif]">
+<body class="bg-[#121212] text-white selection:bg-[#34D399]/30 selection:text-white relative font-['Vazirmatn',sans-serif] overflow-x-hidden w-full">
 
   <!-- هاله‌های نوری تزیینی پس‌زمینه -->
   <div class="ambient-glow-left"></div>
   <div class="ambient-glow-right"></div>
 
   <!-- نوار ناوبری شناور بالا -->
-  <header class="sticky top-6 z-40 flex justify-center px-4">
-    <nav class="flex items-center gap-5 sm:gap-6 px-6 py-2.5 rounded-full bg-[#18181B]/90 backdrop-blur-xl border border-zinc-700/60 shadow-[0_12px_36px_rgba(0,0,0,0.55)]">
-      <div class="flex items-center gap-4 sm:gap-6 text-sm font-light text-zinc-300">
-        <button id="openContactBtn" class="hover:text-[#34D399] transition duration-200 focus:outline-none">تماس با من</button>
-        <a href="#portfolio" class="nav-link hover:text-[#34D399] transition duration-200">نمونه‌کار ها</a>
-        <a href="#about" class="nav-link active text-[#34D399] font-medium relative flex flex-col items-center">
+  <header class="sticky top-3 sm:top-6 z-40 flex justify-center px-2 sm:px-4">
+    <nav class="flex items-center gap-3 sm:gap-6 px-4 sm:px-6 py-2 sm:py-2.5 rounded-full bg-[#18181B]/90 backdrop-blur-xl border border-zinc-700/60 shadow-[0_12px_36px_rgba(0,0,0,0.55)] max-w-full">
+      <div class="flex items-center gap-2.5 sm:gap-5 text-xs sm:text-sm font-light text-zinc-300">
+        <button id="openContactBtn" class="hover:text-[#34D399] transition duration-200 focus:outline-none whitespace-nowrap">تماس با من</button>
+        <a href="#experience" class="nav-link hover:text-[#34D399] transition duration-200 whitespace-nowrap">سوابق شغلی</a>
+        <a href="#portfolio" class="nav-link hover:text-[#34D399] transition duration-200 whitespace-nowrap">نمونه‌کارها</a>
+        <a href="#about" class="nav-link active text-[#34D399] font-medium relative flex flex-col items-center whitespace-nowrap">
           پورتفولیو
-          <span class="active-indicator w-8 h-1 bg-[#34D399] rounded-full mt-1 shadow-[0_0_8px_#34D399]"></span>
+          <span class="active-indicator w-6 sm:w-8 h-0.5 sm:h-1 bg-[#34D399] rounded-full mt-1 shadow-[0_0_8px_#34D399]"></span>
         </a>
       </div>
     </nav>
   </header>
 
-  <!-- کانتینر اصلی صفحه با عرض جمع‌وجور -->
-  <main class="max-w-[1080px] mx-auto px-4 sm:px-6 py-10 relative z-10 space-y-20">
+  <!-- کانتینر اصلی صفحه با عرض متمرکز و ضد سرریز -->
+  <main class="w-full max-w-[1080px] mx-auto px-3 sm:px-6 py-6 sm:py-10 relative z-10 space-y-12 sm:space-y-20 overflow-hidden">
 
     <!-- ۱. بلوک معرفی و بیوگرافی -->
-    <section id="about" class="glass-frame rounded-[27px] p-7 md:p-10 relative">
-      <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+    <section id="about" class="glass-frame rounded-[27px] p-5 sm:p-8 md:p-10 relative">
+      <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-6 sm:gap-8">
         
-        <div class="w-full md:w-3/5 text-justify text-zinc-300 text-[16px] md:text-[18px] leading-[34px] font-normal">
-          راح گرافیک و رابط کاربری (UI) با ۵ سال سابقه فعالیت در طراحی هویت بصری، گرافیک تبلیغاتی و طراحی رابط‌های کاربری وب و اپلیکیشن هستم. در پروژه‌هایم با استفاده از Figma، Photoshop و Illustrator تلاش می‌کنم طرح‌هایی استاندارد، ساده و کاربردی بسازم. در این پورتفولیو می‌توانید نمونه‌ای از پروژه‌های اخیر و مهارت‌های من را مشاهده کنید.</div>
-        <div class="flex items-center justify-end gap-5">
+        <div class="w-full md:w-3/5 text-justify text-zinc-300 text-sm sm:text-[16px] md:text-[18px] leading-7 sm:leading-[34px] font-normal">
+          طراح گرافیک و رابط کاربری (UI) با ۵ سال سابقه فعالیت در طراحی هویت بصری، گرافیک تبلیغاتی و طراحی رابط‌های کاربری وب و اپلیکیشن هستم. در پروژه‌هایم با استفاده از Figma، Photoshop و Illustrator تلاش می‌کنم طرح‌هایی استاندارد، ساده و کاربردی بسازم. در این پورتفولیو می‌توانید نمونه‌ای از پروژه‌های اخیر و مهارت‌های من را مشاهده کنید.
+        </div>
+
+        <div class="w-full md:w-auto flex items-center justify-between md:justify-end gap-4 sm:gap-5">
           <div class="text-right">
-            <h1 class="text-2xl md:text-3xl font-extrabold text-white leading-[50px] tracking-tight">مهدی قناد</h1>
-            <p class="text-[#34D399] text-[16px] font-medium leading-[25px] flex items-center gap-2 justify-end">
-              <span class="inline-block w-2 h-2 rounded-full bg-[#34D399] animate-pulse"></span>
-              Graphic & UI design
-            </p>
-          </div>
-          <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-[3px] border-[#34D399] overflow-hidden bg-zinc-800 shrink-0 shadow-[0_0_24px_rgba(52,211,153,0.35)] relative group">
-            <img src="img/profile.png" alt="مهدی قناد" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 fallback-img" data-title="پروفایل" data-size="150x150">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ۲. بخش مهارت‌ها و حلقه‌های سنجش -->
-    <section class="glass-frame rounded-[40px] py-10 px-6 relative text-center">
-      
-      <!-- المان‌های فلزی سه‌بعدی تزیینی -->
-      <div class="absolute -left-6 -top-6 w-16 h-16 pointer-events-none opacity-90 hidden md:block select-none" aria-hidden="true">
-        <svg viewBox="0 0 100 100" class="w-14 h-14 drop-shadow-[0_12px_20px_rgba(0,0,0,0.8)]">
-          <defs>
-            <radialGradient id="chromeBall" cx="35%" cy="35%" r="65%">
-              <stop offset="0%" stop-color="#ffffff"/>
-              <stop offset="30%" stop-color="#d1d5db"/>
-              <stop offset="70%" stop-color="#374151"/>
-              <stop offset="100%" stop-color="#111827"/>
-            </radialGradient>
-          </defs>
-          <circle cx="50" cy="50" r="46" fill="url(#chromeBall)" />
-          <ellipse cx="38" cy="30" rx="14" ry="7" fill="#ffffff" opacity="0.6" transform="rotate(-25 38 30)"/>
-        </svg>
-      </div>
-
-      <div class="absolute -right-8 -bottom-4 w-24 h-24 pointer-events-none opacity-90 hidden md:block select-none" aria-hidden="true">
-        <span class="text-6xl text-zinc-200 font-black inline-block rotate-12 drop-shadow-[0_12px_20px_rgba(255,255,255,0.22)]">؟</span>
-      </div>
-
-      <h2 class="text-2xl font-bold text-white mb-8">مهارت ها:</h2>
-      
-      <div id="skillsGrid" class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-        <!-- InDesign -->
-        <div class="skill-card flex flex-col items-center gap-3 group">
-          <div class="relative w-32 h-32 rounded-full p-2.5 flex items-center justify-center bg-zinc-900/80 border-2 border-pink-500/30 group-hover:border-pink-500 group-hover:shadow-[0_0_25px_rgba(236,72,153,0.35)] transition-all duration-300">
-            <img src="img/icon-indesign.png" alt="InDesign" class="w-full h-full object-contain rounded-2xl group-hover:scale-110 transition-transform duration-300 select-none fallback-img" data-title="InDesign" data-size="120x120">
-          </div>
-          <span class="text-zinc-200 group-hover:text-pink-400 font-medium text-base transition duration-200">InDesign</span>
-        </div>
-
-        <!-- Illustrator -->
-        <div class="skill-card flex flex-col items-center gap-3 group">
-          <div class="relative w-32 h-32 rounded-full p-2.5 flex items-center justify-center bg-zinc-900/80 border-2 border-amber-500/30 group-hover:border-amber-500 group-hover:shadow-[0_0_25px_rgba(245,158,11,0.35)] transition-all duration-300">
-            <img src="img/icon-illustrator.png" alt="Illustrator" class="w-full h-full object-contain rounded-2xl group-hover:scale-110 transition-transform duration-300 select-none fallback-img" data-title="Illustrator" data-size="120x120">
-          </div>
-          <span class="text-zinc-200 group-hover:text-amber-400 font-medium text-base transition duration-200">Illustrator</span>
-        </div>
-
-        <!-- Photoshop -->
-        <div class="skill-card flex flex-col items-center gap-3 group">
-          <div class="relative w-32 h-32 rounded-full p-2.5 flex items-center justify-center bg-zinc-900/80 border-2 border-cyan-500/30 group-hover:border-cyan-500 group-hover:shadow-[0_0_25px_rgba(6,182,212,0.35)] transition-all duration-300">
-            <img src="img/icon-photoshop.png" alt="Photoshop" class="w-full h-full object-contain rounded-2xl group-hover:scale-110 transition-transform duration-300 select-none fallback-img" data-title="Photoshop" data-size="120x120">
-          </div>
-          <span class="text-zinc-200 group-hover:text-cyan-400 font-medium text-base transition duration-200">Photoshop</span>
-        </div>
-
-        <!-- Figma -->
-        <div class="skill-card flex flex-col items-center gap-3 group">
-          <div class="relative w-32 h-32 rounded-full p-2.5 flex items-center justify-center bg-zinc-900/80 border-2 border-[#34D399]/40 group-hover:border-[#34D399] group-hover:shadow-[0_0_25px_rgba(52,211,153,0.35)] transition-all duration-300">
-            <img src="img/icon-figma.png" alt="Figma" class="w-full h-full object-contain rounded-2xl group-hover:scale-110 transition-transform duration-300 select-none fallback-img" data-title="Figma" data-size="120x120">
-          </div>
-          <span class="text-zinc-200 group-hover:text-[#34D399] font-medium text-base transition duration-200">Figma</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ۳. وردمارک شاخص PORTFOLIO -->
-    <section class="text-right pt-2 select-none">
-      <h3 class="text-[#34D399] text-3xl md:text-5xl font-medium drop-shadow-[0_0_12px_rgba(52,211,153,0.3)]">Graphic & UI design</h3>
-      <div class="text-6xl md:text-9xl font-black text-white/5 tracking-tighter -mt-6">
-        PORTFOLIO
-      </div>
-    </section>
-
-    <!-- ۴. سوابق تحصیلی -->
-    <section class="space-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-6">تحصیلات</h2>
-      
-      <div class="glass-frame rounded-2xl p-5 space-y-2 hover:border-[#34D399]/40 transition">
-        <div class="flex justify-between items-center">
-          <span class="text-[#34D399] text-sm font-semibold tracking-wide">۱۴۰۳ تا کنون</span>
-          <span class="text-[#34D399] text-base">🎓</span>
-        </div>
-        <h3 class="text-lg md:text-xl font-bold text-white text-right">کارشناسی ارشد انفورماتیک پزشکی</h3>
-        <p class="text-[#9CA3AF] text-sm md:text-base text-right font-light">دانشگاه علوم پزشکی شیراز</p>
-      </div>
-
-      <div class="glass-frame rounded-2xl p-5 space-y-2 hover:border-[#34D399]/40 transition">
-        <div class="flex justify-between items-center">
-          <span class="text-[#34D399] text-sm font-semibold tracking-wide">۱۳۹۹ تا ۱۴۰۳</span>
-          <span class="text-[#34D399] text-base">🎓</span>
-        </div>
-        <h3 class="text-lg md:text-xl font-bold text-white text-right">کارشناسی فناوری اطلاعات سلامت</h3>
-        <p class="text-[#9CA3AF] text-sm md:text-base text-right font-light">دانشکده علوم پزشکی وارستگان</p>
-      </div>
-    </section>
-
-    <!-- بخش سوابق شغلی (Experience Section) -->
-    <section id="experience" class="space-y-6">
-      <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-6">سوابق شغلی</h2>
-
-      <div class="space-y-4 max-w-4xl mx-auto">
-
-        <!-- ۱. پروژه‌های فریلنسری -->
-        <div class="glass-frame rounded-2xl p-6 transition duration-300 hover:border-emerald-400/40">
-          <div class="flex justify-between items-center mb-2">
-            <span class="text-accent text-sm font-medium">۱۴۰۰ تاکنون</span>
-            <span class="text-accent text-base">💼</span>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-1 text-right">طراح گرافیک و رابط کاربری</h3>
-          <p class="text-subText text-sm mb-3 text-right font-medium">پروژه‌های فریلنسری</p>
-          <ul class="text-zinc-300 text-sm leading-6 space-y-1 text-right list-disc list-inside">
-            <li>طراحی لوگو، کارت ویزیت، پست‌های تبلیغاتی، بنر، کاتالوگ و طراحی رابط کاربری (UI)</li>
-          </ul>
-        </div>
-
-        <!-- ۲. شرکت فناورانه نوروسینا -->
-        <div class="glass-frame rounded-2xl p-6 transition duration-300 hover:border-emerald-400/40">
-          <div class="flex justify-between items-center mb-2">
-            <span class="text-accent text-sm font-medium">۱۴۰۲ (۶ ماه)</span>
-            <span class="text-accent text-base">🏢</span>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-1 text-right">طراح گرافیک</h3>
-          <p class="text-subText text-sm mb-3 text-right font-medium">شرکت فناورانه نوروسینا | مشهد</p>
-          <ul class="text-zinc-300 text-sm leading-6 space-y-1 text-right list-disc list-inside">
-            <li>طراحی پست‌های شبکه‌های اجتماعی برای شرکت فناورانه نوروسینا</li>
-            <li>همکاری با تیم دیجیتال مارکتینگ برای ایجاد هویت بصری برند</li>
-          </ul>
-        </div>
-
-        <!-- ۳. مرکز علوم پزشکی وارستگان -->
-        <div class="glass-frame rounded-2xl p-6 transition duration-300 hover:border-emerald-400/40">
-          <div class="flex justify-between items-center mb-2">
-            <span class="text-accent text-sm font-medium">۱۴۰۰ (۳ سال)</span>
-            <span class="text-accent text-base">🏥</span>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-1 text-right">طراح گرافیک</h3>
-          <p class="text-subText text-sm mb-3 text-right font-medium">مرکز علوم پزشکی وارستگان</p>
-          <ul class="text-zinc-300 text-sm leading-6 space-y-1 text-right list-disc list-inside">
-            <li>طراحی پست‌ها، استوری‌ها و اسلایدهای آموزشی و اطلاع‌رسانی</li>
-            <li>تولید محتوای بصری بر اساس تقویم محتوایی و هماهنگ با تیم دیجیتال مارکتینگ</li>
-          </ul>
-        </div>
-
-        <!-- ۴. آکادمی DevMinds -->
-        <div class="glass-frame rounded-2xl p-6 transition duration-300 hover:border-emerald-400/40">
-          <div class="flex justify-between items-center mb-2">
-            <span class="text-accent text-sm font-medium">پروژه‌ای / دورکاری</span>
-            <span class="text-accent text-base">💻</span>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-1 text-right">طراح گرافیک (دورکاری - پروژه‌ای)</h3>
-          <p class="text-subText text-sm mb-3 text-right font-medium">آکادمی DevMinds</p>
-          <ul class="text-zinc-300 text-sm leading-6 space-y-1 text-right list-disc list-inside">
-            <li>طراحی پست‌های آموزشی و تبلیغاتی برای شبکه‌های اجتماعی</li>
-            <li>همکاری با تیم محتوا جهت حفظ هماهنگی بصری و هویت برند</li>
-          </ul>
-        </div>
-
-        <!-- ۵. شرکت DDXPRO -->
-        <div class="glass-frame rounded-2xl p-6 transition duration-300 hover:border-emerald-400/40">
-          <div class="flex justify-between items-center mb-2">
-            <span class="text-accent text-sm font-medium">۱۴۰۱ (یک سال)</span>
-            <span class="text-accent text-base">📊</span>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-1 text-right">کارشناس دیتااینتری تخصصی</h3>
-          <p class="text-subText text-sm mb-3 text-right font-medium">شرکت DDXPRO</p>
-          <ul class="text-zinc-300 text-sm leading-6 space-y-1 text-right list-disc list-inside">
-            <li>ورود دقیق داده‌های پزشکی به صورت تخصصی</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-    <!-- ۵. تمامی ۹ ردیف پروژه‌ها با فریم‌های شیشه‌ای و تصاویر پوشه img -->
-    <section id="portfolio" class="space-y-10 pt-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-8">نمونه کار ها</h2>
-
-      <!-- ردیف ۱: ۲ فریم کارت‌های ویزیت اول -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="glass-frame p-3 sm:p-4 group">
-          <div class="w-full aspect-[619/455] overflow-hidden rounded-[28px] sm:rounded-[32px] bg-zinc-900/40">
-            <img src="img/mockup-cards-1.png" alt="پروژه ۱: کارت ویزیت اول" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۱: طراحی کارت ویزیت" data-title="کارت ویزیت اول" data-size="619x455">
-          </div>
-        </div>
-        <div class="glass-frame p-3 sm:p-4 group">
-          <div class="w-full aspect-[619/455] overflow-hidden rounded-[28px] sm:rounded-[32px] bg-zinc-900/40">
-            <img src="img/mockup-cards-2.png" alt="پروژه ۲: کارت ویزیت دوم" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۲: طراحی کارت ویزیت مدرن" data-title="کارت ویزیت دوم" data-size="619x455">
-          </div>
-        </div>
-      </div>
-
-      <!-- ردیف ۲: ۲ فریم کارت‌های ویزیت تجاری -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="glass-frame p-3 sm:p-4 group">
-          <div class="w-full aspect-[619/455] overflow-hidden rounded-[28px] sm:rounded-[32px] bg-zinc-900/40">
-            <img src="img/Business_Card_Mockup_5.png" alt="پروژه ۳: کارت ویزیت زرد و تجاری" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۳: بیزینس کارت و هویت برند" data-title="کارت ویزیت بیزینس ۵" data-size="619x455">
-          </div>
-        </div>
-        <div class="glass-frame p-3 sm:p-4 group">
-          <div class="w-full aspect-[619/455] overflow-hidden rounded-[28px] sm:rounded-[32px] bg-zinc-900/40">
-            <img src="img/mockup-cards-dark.png" alt="پروژه ۴: کارت ویزیت مشکی مات" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۴: کارت ویزیت لوکس مات" data-title="کارت ویزیت مات" data-size="619x455">
-          </div>
-        </div>
-      </div>
-
-      <!-- ردیف ۳: ۲ فریم استوری‌ها -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="glass-frame p-3 sm:p-4 group">
-          <div class="w-full aspect-[619/630] overflow-hidden rounded-[28px] sm:rounded-[32px] bg-zinc-900/40">
-            <img src="img/pineu-story.png" alt="پروژه ۵: استوری پینئو" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۵: طراحی استوری اینستاگرام پینئو" data-title="استوری پینئو" data-size="619x630">
-          </div>
-        </div>
-        <div class="glass-frame p-3 sm:p-4 group">
-          <div class="w-full aspect-[619/630] overflow-hidden rounded-[28px] sm:rounded-[32px] bg-zinc-900/40">
-            <img src="img/japama-story-1.png" alt="پروژه ۶: استوری جاباما ۱" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۶: استوری کمپین جاباما ۱" data-title="استوری جاباما ۱" data-size="619x630">
-          </div>
-        </div>
-      </div>
-
-      <!-- ردیف ۴: ۱ فریم وسط‌چین استوری -->
-      <div class="max-w-[540px] mx-auto">
-        <div class="glass-frame p-3 sm:p-4 group">
-          <div class="w-full aspect-[619/630] overflow-hidden rounded-[28px] sm:rounded-[32px] bg-zinc-900/40">
-            <img src="img/japama-story-2.png" alt="پروژه ۷: استوری جاباما ۲" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۷: استوری کمپین جاباما ۲" data-title="استوری جاباما ۲" data-size="619x630">
-          </div>
-        </div>
-      </div>
-
-      <!-- ردیف ۵: ۱ فریم استیج موکاپ گوشی‌ها -->
-      <div class="glass-frame p-3 sm:p-4 group">
-        <div class="w-full aspect-[1280/545] overflow-hidden rounded-[28px] sm:rounded-[32px] bg-zinc-900/40">
-          <img src="img/mockup-phone-stage.png" alt="پروژه ۸: استیج موکاپ گوشی‌ها" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۸: موکاپ اپلیکیشن در استیج سه‌بعدی" data-title="موکاپ استیج موبایل" data-size="1280x545">
-        </div>
-      </div>
-
-      <!-- ردیف ۶: ۱ فریم موکاپ داشبورد و لپ‌تاپ‌ها -->
-      <div class="glass-frame p-3 sm:p-4 group">
-        <div class="w-full aspect-[1278/978] overflow-hidden rounded-[28px] sm:rounded-[32px] bg-zinc-900/40">
-          <img src="img/mockup-laptops.png" alt="پروژه ۹: وب‌سایت و داشبورد لپ‌تاپ" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۹: پرزنتیشن داشبورد و وب‌سایت" data-title="پرزنتیشن داشبورد لپ‌تاپ" data-size="1278x978">
-        </div>
-      </div>
-
-      <!-- ردیف ۷: ۱ فریم موکاپ موبایل تم دارک -->
-      <div class="glass-frame p-3 sm:p-4 group">
-        <div class="w-full aspect-[1278/884] overflow-hidden rounded-[28px] sm:rounded-[32px] bg-zinc-900/40">
-          <img src="img/mockup-phone-dark.png" alt="پروژه ۱۰: رابط کاربری موبایل تم دارک" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۱۰: اپلیکیشن تم دارک" data-title="رابط کاربری موبایل دارک" data-size="1278x884">
-        </div>
-      </div>
-
-      <!-- ردیف ۸: ۱ فریم موکاپ موبایل تم لایت -->
-      <div class="glass-frame p-3 sm:p-4 group">
-        <div class="w-full aspect-[1278/884] overflow-hidden rounded-[28px] sm:rounded-[32px] bg-zinc-900/40">
-          <img src="img/mockup-phone-light.png" alt="پروژه ۱۱: رابط کاربری موبایل تم لایت" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۱۱: اپلیکیشن تم لایت" data-title="رابط کاربری موبایل لایت" data-size="1278x884">
-        </div>
-      </div>
-
-      <!-- ردیف ۹: ۳ فریم مجاور پلاک‌ها و ساین‌های لوگو -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div class="glass-frame-sub p-2.5 sm:p-3 group">
-          <div class="w-full aspect-[342/257] overflow-hidden rounded-[18px] sm:rounded-[20px] bg-zinc-900/40">
-            <img src="img/Luxury-Teal-Gold-Brand-Signage.png" alt="پروژه ۱۲: ساین تجاری لوکس" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۱۲: ساین تجاری طلایی و فیروزه‌ای" data-title="ساین تجاری لوکس" data-size="342x257">
-          </div>
-        </div>
-        <div class="glass-frame-sub p-2.5 sm:p-3 group">
-          <div class="w-full aspect-[342/257] overflow-hidden rounded-[18px] sm:rounded-[20px] bg-zinc-900/40">
-            <img src="img/Premium-Automotive-Logo-Plaque.png" alt="پروژه ۱۳: پلاک خودرویی" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۱۳: پلاک خودرویی برند" data-title="پلاک لوگو خودرو" data-size="342x257">
-          </div>
-        </div>
-        <div class="glass-frame-sub p-2.5 sm:p-3 group">
-          <div class="w-full aspect-[342/257] overflow-hidden rounded-[18px] sm:rounded-[20px] bg-zinc-900/40">
-            <img src="img/MedRep-Academy-Reception-Sign.png" alt="پروژه ۱۴: تابلو آکادمی" class="zoomable-mockup w-full h-full object-cover block fallback-img" data-caption="پروژه ۱۴: تابلوی پذیرش آکادمی" data-title="تابلو آکادمی پذیرش" data-size="342x257">
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- فوتر با دسترسی سریع و دکمه بازگشت به بالا -->
-    <footer id="contact" class="pt-12 pb-10 border-t border-zinc-800 flex flex-col items-center justify-center gap-4 text-center">
-      <div class="flex flex-wrap items-center justify-center gap-3">
-        <a href="https://t.me/Mahdiighannad" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-700 hover:border-[#34D399] text-sm text-zinc-300 hover:text-[#34D399] flex items-center gap-2 transition duration-200">
-          <span>💬</span>
-          <span>ارسال پیام در تلگرام</span>
-        </a>
-        <a href="mailto:mahdighannad96@gmail.com?subject=سفارش%20پروژه%20طراحی" class="px-4 py-2 rounded-full bg-zinc-900 border border-zinc-700 hover:border-[#34D399] text-sm text-zinc-300 hover:text-[#34D399] flex items-center gap-2 transition duration-200">
-          <span>✉️</span>
-          <span>ارسال ایمیل</span>
-        </a>
-        <button id="footerContactBtn" class="px-4 py-2 rounded-full border border-zinc-700 hover:border-[#34D399] text-sm text-zinc-300 hover:text-[#34D399] transition duration-200">
-          اطلاعات تماس
-        </button>
-        <button id="scrollToTopBtn" class="w-9 h-9 rounded-full bg-zinc-800 border border-zinc-700 hover:border-[#34D399] text-zinc-300 hover:text-[#34D399] flex items-center justify-center transition" title="بازگشت به بالا">
-          ↑
-        </button>
-      </div>
-      <p class="text-zinc-500 text-xs mt-2">تمامی حقوق برای مهدی قناد محفوظ است © ۱۴۰5 - ۲۰۲۶</p>
-    </footer>
-
-  </main>
-
-  <!-- لایت‌باکس بزرگنمایی پروژه‌ها -->
-  <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4 transition-all duration-300">
-    <div class="relative max-w-5xl max-h-[90vh] flex flex-col items-center">
-      <button id="closeLightboxBtn" class="absolute -top-12 left-0 sm:left-auto sm:-right-2 text-white/70 hover:text-white text-2xl font-bold bg-zinc-800/80 w-10 h-10 rounded-full flex items-center justify-center border border-zinc-700 transition">
-        ✕
-      </button>
-      <img id="lightboxImg" src="" alt="پیش‌نمایش پروژه" class="max-h-[82vh] max-w-full rounded-2xl object-contain shadow-2xl border border-zinc-800">
-      <p id="lightboxCaption" class="mt-3 text-sm text-zinc-400 font-light text-center"></p>
-    </div>
-  </div>
-
-  <!-- مودال ارتباط و کپی سریع ایمیل/تلگرام -->
-  <div id="contactModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 transition-all duration-300">
-    <div class="glass-frame rounded-3xl p-6 sm:p-8 max-w-md w-full relative bg-[#18181B]/95 text-right border border-zinc-700/80 shadow-2xl">
-      <div class="flex justify-between items-center mb-6">
-        <h3 class="text-xl font-bold text-white">ارتباط با مهدی قناد</h3>
-        <button id="closeContactBtn" class="w-8 h-8 rounded-full bg-zinc-800 text-zinc-400 hover:text-white flex items-center justify-center text-sm transition">
-          ✕
-        </button>
-      </div>
-      
-      <p class="text-sm text-zinc-300 mb-6 leading-relaxed font-light">
-        جهت سفارش پروژه گرافیک، طراحی رابط کاربری (UI/UX) و دیزاین سیستم می‌توانید از طریق راه‌های زیر در ارتباط باشید:
-      </p>
-
-      <div class="space-y-3">
-        <!-- ایمیل -->
-        <div class="flex items-center justify-between p-3 rounded-xl bg-zinc-900 border border-zinc-800">
-          <div class="flex items-center gap-3">
-            <span class="text-[#34D399] text-lg">✉️</span>
-            <div>
-              <div class="text-xs text-zinc-400">ایمیل</div>
-              <div class="text-sm font-mono text-white select-all">mahdighannad96@gmail.com</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2">
-            <a href="mailto:mahdighannad96@gmail.com?subject=سفارش%20پروژه%20طراحی" class="px-3 py-1.5 rounded-lg bg-[#34D399] text-black font-medium hover:bg-emerald-400 text-xs transition duration-200 flex items-center gap-1">
-              <span>ارسال</span>
-              <span>↗</span>
-            </a>
-            <button class="copy-btn px-2.5 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-xs transition text-zinc-300" data-clipboard="mahdighannad96@gmail.com" data-msg="ایمیل کپی شد!">
-              کپی
-            </button>
-          </div>
-        </div>
-
-        <!-- تلگرام -->
-        <div class="flex items-center justify-between p-3 rounded-xl bg-zinc-900 border border-zinc-800">
-          <div class="flex items-center gap-3">
-            <span class="text-[#34D399] text-lg">💬</span>
-            <div>
-              <div class="text-xs text-zinc-400">تلگرام</div>
-              <div class="text-sm font-mono text-white">@Mahdiighannad</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2">
-            <a href="https://t.me/Mahdiighannad" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-[#34D399] text-black font-medium hover:bg-emerald-400 text-xs transition duration-200 flex items-center gap-1">
-              <span>پیام</span>
-              <span>↗</span>
-            </a>
-            <button class="copy-btn px-2.5 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-xs transition text-zinc-300" data-clipboard="@Mahdiighannad" data-msg="آیدی تلگرام کپی شد!">
-              کپی
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- اعلان پاپ‌آپ (Toast) برای کپی موفق -->
-  <div id="toast" class="fixed bottom-6 right-6 z-50 px-4 py-2.5 rounded-xl bg-[#34D399] text-black font-semibold text-sm shadow-xl transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-2">
-    <span>✓</span>
-    <span id="toastMsg">کپی شد!</span>
-  </div>
-
-  <!-- اتصال به اسکریپت تعاملی خارجی -->
-  <script src="script.js"></script>
-</body>
-</html>
+            <h1 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-white leading-tight md:leading-[50px] tracking-tight">مهدی قناد</h1>
+            <p class="text-[#34D399] text-sm
